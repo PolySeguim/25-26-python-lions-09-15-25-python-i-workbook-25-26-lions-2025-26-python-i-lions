@@ -18,10 +18,27 @@ def draw_clock():
         poly.pendown()
         poly.left(30)
 
-def spiral():
-    poly.circle(50)
+def square_spiral():
+    distance = 3
+    poly.speed(100)
+    for i in range(500):
+        poly.forward(distance)
+        poly.right(90)
+        distance = distance + 3
 
-draw_clock()
+def square_spiral2():
+    distance = 3
+    poly.speed(100)
+    for i in range(500):
+        poly.forward(distance)
+        poly.right(89)
+        distance = distance + 1
+
+
+#draw_clock()
+#square_spiral()
+square_spiral2()
+
 
 screen.listen()
 screen.mainloop()
