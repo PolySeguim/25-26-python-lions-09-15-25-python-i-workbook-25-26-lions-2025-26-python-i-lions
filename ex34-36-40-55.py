@@ -1,9 +1,32 @@
+import string
+
 """
 Exercise 34:  Even or Odd?
 Write a program that reads an integer from the user.  
 Then your program should display a message indicating whether
 the integer is even or odd    
+
+the = sign is a assignment
+for boolean operations you would use
+- == for equal
+- > greater than and >= for greater than equal
+- < less than and <= for less than equal
+- ! not
+
+Void function <- because it does not return any value
+                it just performs an action
+
 """
+def even_odd():
+    
+    # communication with the user is the most volatile
+    # parts of a program.
+    num = int(input("Enter a number: "))
+    if(num%2 == 0):
+        print("The number is even")
+    else:
+        print("The number is odd")
+    
 
 """
 Exercise 36:  Vowel or consonant
@@ -15,6 +38,15 @@ should display a message indicating that sometimes y is a vowel, and
 sometimes y is a consonant.  Otherwise your program should display
 a message indicating that the letter is a consonant.
 """
+
+def vowel_consonant():
+    letters = string.ascii_letters
+    vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    epsilon = ["y", "Y"]
+    user_letter = input("Enter a letter: ")
+
+    for user_letter in letters:
+        return 0
 
 """
 Exercise 40:  Name that triangle
@@ -50,3 +82,13 @@ decimal points
 """
 
 
+#Testing Suite
+
+def testsuite():
+    for i in range(5):
+       # tested on 10-07 with just int and everything good - Poly 10/07
+       #even_odd()
+       vowel_consonant()
+
+
+testsuite()
