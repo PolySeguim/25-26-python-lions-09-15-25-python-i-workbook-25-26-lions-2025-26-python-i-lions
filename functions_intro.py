@@ -62,6 +62,52 @@ def isDivisible(x, y):
     else:
         return False
 
+
+# A fruitful compare function that compares two integers
+# and 
+# ***  returns the largest integers
+def compare(num1, num2):
+    if(num1>num2):
+        return num1
+    elif(num2>num1):
+        return num2
+    else:
+        print("Numbers are equal")
+        return 0
+
+print(compare(5, 4))
+print(compare(5.0, 5.5))
+print(compare(-5, 4.0))
+print(compare(15, 40))
+print(compare(1, -1000))
+print(compare(10,10))
+# SQUARE ROOT num**(1/2)
+
+# A fruitful hypotenuse function that 
+# *** returns the value of
+# the hypotenuse given the a and b value
+
+# A fruitful slope function that 
+# *** returns the slope of a line
+# given 4 parameters (x1, y1, x2, y2)
+
+# A fruitful intercept function that will find the y-intercept
+# given two points (x1, y1, x2, y2)
+# ***  returns the y-intercept
+# ***  This function should call the slope function in order to 
+# *** calculate the y-intercept or b-value
+
+# A fruitful function that will calculate whether a number is
+# a factor of another number.  
+# *** Is 3 a factor of 9?
+# *** return a BOOLEAN (True or False)
+
+# A fruitful function that will calculate whether a number is
+# a multiple of another number.  
+# *** Is 12 a multiple of 36?
+# *** return a BOOLEAN (True or False)
+
+
 #Function Calls
 """
 num1 = 1,2,3,4,5,6,7,8,9,10,10
