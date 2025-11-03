@@ -1,4 +1,20 @@
 """
+Exercise 108:  Negatives, Zeros, and Positives
+Create a program that reads integers from the user until a blank 
+line is entered.  Once all of the integers have been read your
+program should display all the negative numbers, followed by all 
+of the zeros, followed b y all of the positive numbers.  Within each
+group the numbers should be displayed in the same order that they were
+entered by the user.  For example, if the user enters the values 
+3, -4, 1, 0, -1, 0, and -2 then your program should output the values
+-4, -1, -2, 0 ,0 , 3, and 1.  Your program should display each value 
+on its own line.
+"""
+
+
+
+
+"""
 Exercise 109:  List of Proper Divisors
 A proper divisor of a positive integer, n, is a positive integer
 less than n which divides evenly into n.  Write a function that
