@@ -20,15 +20,15 @@ def variable():
 
     print(a, b)
 
-def mysum(xs):
-   """ Sum all the numbers in the list xs, and return the total. """
+""" Sum all the numbers in the list xs, and return the total. """
+def mysum(xs):   
    running_total = 0
    for x in xs:
        running_total = running_total + x
    return running_total
 
- def sum_to(n):
-    """ Return the sum of 1+2+3 ... n """
+""" Return the sum of 1+2+3 ... n """
+def sum_to(n):
     ss = 0
     v = 1
     while v <= n:
@@ -36,6 +36,20 @@ def mysum(xs):
         v = v + 1
     return ss
 
+""" Collatz 3n+1 Sequence
+    Print the 3n+1 sequence from n,
+        terminating when it reaches 1.
+"""
+def seq3np1(n):
+
+    while n != 1:
+        print(n, end=", ")
+        if n % 2 == 0:        # n is even
+            n = n // 2
+        else:                 # n is odd
+            n = n * 3 + 1
+    print(n, end=".\n")
+    
 #TESTING AREA
 def test(pass_fail):
     if pass_fail:

@@ -1,18 +1,66 @@
+#Python list documentation
+#https://docs.python.org/3/tutorial/datastructures.html
+
 """
 Exercise 108:  Negatives, Zeros, and Positives
+readIntegers()
 Create a program that reads integers from the user until a blank 
-line is entered.  Once all of the integers have been read your
+line is entered.  
+
+displayIntegers()
+Once all of the integers have been read your
 program should display all the negative numbers, followed by all 
-of the zeros, followed b y all of the positive numbers.  Within each
+of the zeros, followed b y all of the positive numbers. 
+
+Within each
 group the numbers should be displayed in the same order that they were
 entered by the user.  For example, if the user enters the values 
 3, -4, 1, 0, -1, 0, and -2 then your program should output the values
 -4, -1, -2, 0 ,0 , 3, and 1.  Your program should display each value 
 on its own line.
 """
+def readIntegers():
+    integers = [] #create a list of integers
+                  # instantiating, but I'm not initializing
+
+    try:
+        # get the user input and cast as an int
+        user_input = int(input("Enter an integer: "))
+
+        #conditional loop, that while there IS user_input
+        # that it will add the value at the back of the list
+        while user_input != "":
+            integers.append(user_input)
+            #print(integers)  #this debugging
+            # get the user input and cast as an int
+            user_input = int(input("Enter an integer: "))
+    except ValueError:
+        user_input = ""
+        print(f"Error: '{user_input}' cannot be converted to an integer.")    
+
+    return integers
+
+def displayIntegers(list_integers):
+    neg_list = [] #this will hold the new values from the list
+    zero_list = []
+    pos_list = []
+    all_integers = []
+    for i in list_integers:
+        if i<0:
+            neg_list.append(i)
+        elif i==0:
+            zero_list.append(i)
+        else: 
+            pos_list.append(i)
+    all_integers.extend(neg_list)
+    all_integers.extend(zero_list)
+    all_integers.extend(pos_list)
+    
+    return(all_integers)
 
 
-
+#Printing the list of integers from above
+print(displayIntegers(readIntegers()))
 
 """
 Exercise 109:  List of Proper Divisors
