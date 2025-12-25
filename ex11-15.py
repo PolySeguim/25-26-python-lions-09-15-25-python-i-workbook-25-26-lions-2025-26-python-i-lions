@@ -44,8 +44,7 @@ def earthDistance():
     g2 = float(input("g2: "))
     #distance = 6371.01 x arccos(sin(t1) x sin(t2) + cos(t1) x cos(t2) x cos(g1-g2))
 
-    distance = 6371.01 * math.a23
-    cos(math.sin(t2) + math.cos(t1) * math.cos(t2) * math.cos(g1-g2))
+    distance = 6371.01 * math.acos(math.sin(t1) * math.sin(t2) + math.cos(t1) * math.cos(t2) * math.cos(g1-g2))
     print(distance)
 
 earthDistance()

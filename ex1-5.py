@@ -1,3 +1,4 @@
+#this is a test submission
 
 """
 Exercise 1:  Mailing Address
@@ -6,6 +7,11 @@ address formatted in the manner that you would usually see it
 on the outside of an envelope.  Your program does not need to 
 read any input from the user.  (9 lines)
 """
+
+def whatType(userInput):
+    print(type(userInput))
+    print("Python RULES")
+    
 
 """
 Exercise 2:  Hello
